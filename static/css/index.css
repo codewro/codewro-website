@@ -1,0 +1,58 @@
+#description  {
+	text-align: center;
+}
+
+#description li  {
+	text-align: left;
+}
+
+#for-beginners {
+	margin: 25px 0px;
+	padding-right: 10%;
+}
+
+#for-beginners img {
+	margin-right: 15px;
+	border-width: thin;
+	border-style: solid;
+}
+
+#for-beginners h3 {
+	margin-top: 0px;
+}
+
+#for-programmers {
+	margin: 25px 0px;
+	padding-left: 10%;
+}
+
+#for-programmers img {
+	margin-left: 5px;
+	border-width: thin;
+	border-style: solid;
+}
+
+#for-programmers h3 {
+	margin-top: 0px;
+}
+
+#organizers {
+	text-align: center;
+}
+
+#organizers h3 {
+	margin-bottom: 20px;
+}
+
+#organizers figure {
+	display: inline-block;
+	text-align: center;
+	margin: 0 20px;
+}
+
+#contact {
+	margin: 0px;
+	padding: 25px 0px;
+	display: block;
+	text-align: center;
+}

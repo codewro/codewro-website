@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css"  href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+
+      <div id="description" class="container">
+        <p>CodeWro zrodziło się z pomysłu, by stworzyć spotkania, podczas których można w przyjacielskiej atmosferze popisać trochę kodu.</p>
+          <ul>Czym CodeWro <u>nie</u> jest:
+          <li>hackathonem, w znaczeniu: nie narzucamy tematu czy tego, co masz robić. Nie musisz na końcu spotkania prezentować efektów swojej pracy.</li>
+          <li>warsztatami czy zajęciami z programowania. Nie ma tutaj jasnego podziału na nauczycieli i uczniów. Wierzymy, że każdy ma wyjątkowy zbiór umiejętności, którymi może się podzielić z innymi.</li>
+          </ul>
+      </div>
+
+      <div class="divider divider1">
+      </div>
+
+      <div id="for-beginners">
+          <img src="{% static 'img/for_beginners.jpg' %}" class="img-responsive" align="left" alt="Pick an option and go!"/>
+          <div class="title"><h3>Jestem na poziomie 0</h3></div>
+          <p>Ta sekcja jest pisana z myślą o tych, którzy nie mają żadnego< doświadczenia z programowaniem.<br/><br/>
+          Nigdy nie napisałeś/aś ani jednej linijki kodu? W porządku, spotkania CodeWro są też dla Ciebie! O ile tylko chcesz tę pierwszą linijkę napisać. :)<br />
+          Jest wiele stron, które oferują bezpłatne kursy programowania. Nie wiesz gdzie zacząć? Przygotowaliśmy <a href="{% url 'resources_list' %}">listę materiałów</a>. Wybierz sobie coś i zacznij działać.<br />
+          Stawiamy na samodzielną naukę, ale w razie problemów pamiętaj, że masz wokół siebie ludzi, którzy chętnie Ci pomogą.
+          Dzięki temu wiesz, że jeśli napotkasz problem, z którym nie będziesz mogła sobie poradzić, nie zostawimy Cię samego/samej, byś waliła głową w mur. Wszyscy jesteśmy tu po to, by się uczyć i tworzyć, więc nie wahaj się pytać!</p>
+          <div style="clear: both;"></div>
+      </div>
+
+      <div class="divider divider7">
+      </div>
+
+      <div id="for-programmers">
+        <img src="{% static 'img/life_is_about.jpg' %}" class="img-responsive" align="right" alt="Life is about the people you meet."/>
+        <div class="title"><h3>Jestem na poziomie 1 lub wyższym</h3></div>
+        <p>Okej, a więc wiesz już coś o programowaniu. Dlaczego miał(a)byś przyjść?<br/><br/>
+          Jeśli chcesz zmienić na chwilę swoje otoczenie i pokodzić trochę w miłej atmosferze.<br/>
+          Jeśli chcesz znaleźć kogoś do współpracy przy Twoim projekcie.<br/>
+          Jeśli chcesz się dzielić swoją wiedzą i możesz oderwać się od swoich rzeczy na 5-15-55 minut (to od Ciebie zależy na ile) to miejsce idealne dla ciebie.
+          Możesz być czyimś Gandalfem, Dumbledorem, Wujkiem Benem... Nie przejmuj się, że oni wszyscy nie żyją, przecież wiesz o co mi chodzi. Każdy bohater miał swojego mentora. Help me, Obi-Wan Kenobi.</p>
+          <div style="clear: both;"></div>
+      </div>
+
+      <div class="divider divider0">
+      </div>
+
+      <div id="organizers" class="section">
+        <div class="title"><h3>Organizatorzy</h3></div>
+        <div class="row">
+          <figure>
+            <img src="{% static 'img/agata.jpg' %}" class="img-circle" alt="Agata Grdal"/>
+            <figcaption>Agata Grdal</figcaption>
+          </figure>
+          <figure>
+            <img src="{% static 'img/marcin.jpg' %}" class="img-circle" alt="Marcin Drzewiecki"/>
+            <figcaption>Marcin Drzewiecki</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="divider divider3">
+      </div>
+
+      <div id="contact" class="section">
+        <div class="title"><h3>Chcesz się z nami skontaktować?</h3></div>
+        <a href="mailto:kontakt@codewro.pl">kontakt@codewro.pl</a>
+        <!-- TODO: zrobic tutaj contact form --->
+      </div>
+
+{% endblock %}

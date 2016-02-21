@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load bootstrap staticfiles %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css"  href="{% static 'css/resources_list.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <p>Jesteś na tej stronie, ponieważ pewnie chcesz dodać jakiś materiał do bazy.
+    Zanim to zrobisz, upewnij się, że nie ma go już na liście. ;)
+    Dzięki!</p>
+</div>
+
+<div class="divider divider3">
+</div>
+
+<form action="{% url 'propose' %}" method="post" id="proposal" class="container">
+      {{ form|bootstrap }}
+     <p class="form-group text-center">
+         <button type="submit" class="btn btn-primary button-submit">Dodaj</button>
+     </p>
+     {% csrf_token %}
+ </form>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Codewro - let's write some code!</title>
+    <meta name="description" content="Spotkania z ">
+    <meta name="keywords" content="programowanie, open source, spotkania, Wroclaw">
+
+    <link rel="icon" href="{% static 'img/303.png' %}" type="image/x-icon">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css"  href="{% static 'css/base.css' %}">
+    {% block extra_css %}{% endblock %}
+
+    <!-- JS
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+
+  </head>
+  <body>
+    <!-- Navbar
+    ================================================== -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{% url 'home' %}">Strona Główna</a></li>
+          <li><a href="{% url 'resources_list' %}">Materiały</a></li>
+          <li><a href="mailto:kontakt@codewro.pl">Kontakt</a></li>
+          <li><a href="{% url 'coc' %}">CoC</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="divider divider0 container-fluid">
+    </div>
+
+      {% block content %}
+      {% endblock %}
+
+    </div>
+  </body>
+</html>
