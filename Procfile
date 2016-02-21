@@ -1,1 +1,1 @@
-web: gunicorn codewro.wsgi_heroku
+web: gunicorn codewro.wsgi
