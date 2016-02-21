@@ -15,4 +15,4 @@ from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "codewro.settings")
 
-application = DjangoWhiteNoise(application)
+application = DjangoWhiteNoise(get_wsgi_application())
