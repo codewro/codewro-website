@@ -6,6 +6,11 @@
 	text-align: left;
 }
 
+#for-beginners {
+	margin: 25px 0px;
+	padding-right: 10%;
+}
+
 #for-beginners img {
 	margin-right: 15px;
 	border-width: thin;
@@ -14,6 +19,11 @@
 
 #for-beginners h3 {
 	margin-top: 0px;
+}
+
+#for-programmers {
+	margin: 25px 0px;
+	padding-left: 10%;
 }
 
 #for-programmers img {
@@ -30,6 +40,10 @@
 	text-align: center;
 }
 
+#organizers h3 {
+	margin-bottom: 20px;
+}
+
 #organizers figure {
 	display: inline-block;
 	text-align: center;
@@ -37,6 +51,8 @@
 }
 
 #contact {
+	margin: 0px;
+	padding: 25px 0px;
 	display: block;
 	text-align: center;
 }

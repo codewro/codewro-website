@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
-{% load bootstrap %}
+{% load bootstrap staticfiles %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css"  href="{% static 'css/resources_list.css' %}">
+{% endblock %}
 
 {% block content %}
 
@@ -15,7 +19,7 @@
 <form action="{% url 'propose' %}" method="post" id="proposal" class="container">
       {{ form|bootstrap }}
      <p class="form-group text-center">
-         <button type="submit" class="btn btn-primary">Dodaj</button>
+         <button type="submit" class="btn btn-primary button-submit">Dodaj</button>
      </p>
      {% csrf_token %}
  </form>

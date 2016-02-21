@@ -42,3 +42,18 @@
 .resource .panel-body .row {
   padding-left: 10px;
 }
+
+.button-submit{
+  margin: 20px 0;
+  padding: 10px 40px;
+  color: #70a355;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid #70a355;
+}
+
+.button-submit:hover{
+  color: #70a355;
+  background-color: #d1e2c8;
+  border: 1px solid #70a355;
+}
