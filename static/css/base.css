@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic);
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+a{
+	color: #23527c;
+}
+
+h3 {
+		font-size: 30px;
+}
+
+::selection {
+  background: #c0d6e4;
+}
+::-moz-selection {
+  background: #c0d6e4;
+}
+
+.navbar {
+	border: none;
+	margin: 15px 0px;
+	padding-right: 40px;
+}
+
+nav li a {
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #074E95;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: inherit;
+	color: #5183b4;
+}
+
+.container {
+	width: 80%;
+	padding: 30px 50px;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+}
+
+.title {
+	text-align: center;
+}
+
+.section {
+	margin: 20px 0px;
+}
+
+.divider {
+	height: 10px;
+}
+
+.divider0 {
+	background-color: #C8D1E2; //blue
+}
+
+.divider1 {
+	background-color: #EED8C6; //sand
+}
+
+.divider2 {
+	background-color: #eec6c8; //pink
+}
+
+.divider3 {
+	background-color: #D9C8E2; //violet
+}
+
+.divider4 {
+	background-color: #C29194; //red
+}
+
+.divider5 {
+	background-color: #E2C8D1; //pink
+}
+
+.divider6 {
+	background-color: #DCEAEE; //light blue
+}
+
+.divider7 {
+	background-color: #d1e2c8; //green
+}

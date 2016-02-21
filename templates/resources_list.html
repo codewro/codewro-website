@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css"  href="{% static 'css/resources_list.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <p>Jeśli wiesz o jakimś fajnym kursie/materiale/artykule/cokolwiek, co może pomóc w nauce i chcesz się podzielić linkiem to wypełnij <a href="{% url 'propose' %}">formularz</a>. Dzięki!</p>
+</div>
+
+<div class="divider divider2">
+</div>
+
+<div class="resources_list container-fluid">
+<div class="row">
+  <div class="col-sm-3">
+    <div class="tags">
+     <div class="panel">
+      <div class="panel-heading">
+        <p>Tagi</p>
+      </div>
+      <div class="tags-body">
+          {% for tag in tags %}
+            <a href="{% url 'tagged' slug=tag.slug %}">{{ tag.name }}</a>
+          {% empty %}
+            Brak Tagów
+          {% endfor %}
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="col-md-9">
+    {% for resource in resources %}
+    <div class="resource">
+      <div class="panel">
+        <div class="panel-heading">
+          <p><a href="{{ resource.link }}">{{ resource.title }}</a></p>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+              <p>{{ resource.description|linebreaks }}</p>
+                {% if resource.for_total_beginners == True %}
+                     <p>✅ Dla początkujących</p>
+                {% endif %}
+              <p>📎 Tagi:
+              {% for tag in resource.tags.all %}
+                <a href="{% url 'tagged' slug=tag.slug %}">{{ tag.name }}</a>
+              {% endfor %}
+              </p>
+          </div>
+        </div>
+      </div>
+    {% empty %}
+      Nie ma żadnych materiałów, przepraszamy.
+    {% endfor %}
+  </div>
+</div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+#description  {
+	text-align: center;
+}
+
+#description li  {
+	text-align: left;
+}
+
+#for-beginners img {
+	margin-right: 15px;
+	border-width: thin;
+	border-style: solid;
+}
+
+#for-beginners h3 {
+	margin-top: 0px;
+}
+
+#for-programmers img {
+	margin-left: 5px;
+	border-width: thin;
+	border-style: solid;
+}
+
+#for-programmers h3 {
+	margin-top: 0px;
+}
+
+#organizers {
+	text-align: center;
+}
+
+#organizers figure {
+	display: inline-block;
+	text-align: center;
+	margin: 0 20px;
+}
+
+#contact {
+	display: block;
+	text-align: center;
+}
