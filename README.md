@@ -6,7 +6,7 @@ To jest repozytorium kodu strony http://codewro.pl/
 
 1. Uruchom codewro na własnym komputerze
 2. Dodaj funkcjonalność/napraw błąd na swojej lokalnej wersji codewro (w ramach inspiracji możesz spojrzeć na sekcję [Issues](https://github.com/codewro/codewro-website/issues), w której znajdują się sprawy, z którymi się aktualnie zmagamy)
-3. Stwórz [a pull request](https://help.github.com/articles/using-pull-requests). Opisz czego dotyczą zmiany (jaka funkcjonalność/błąd).
+3. Stwórz [pull request](https://help.github.com/articles/using-pull-requests). Opisz czego dotyczą zmiany (jaka funkcjonalność/błąd).
 
 ## Jak uruchomić codewro na własnym komputerze?
 
