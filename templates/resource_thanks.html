@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block extra_js %}
+<meta http-equiv="Refresh" content="3; url={% url 'resources_list' %}" />
+{% endblock %}
 
 {% block content %}
-<p>Dzieki za wrzucenie materiału! :)</p>
+<div class="container">
+  <p>Dzieki za wrzucenie materiału! :)</p>
+</div>
 {% endblock %}
