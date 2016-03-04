@@ -7,8 +7,9 @@
 }
 
 .tags .panel-heading {
-  border-bottom: 10px solid #D9C8E2;
-  padding-bottom: 3px;
+  background-color: #D9C8E2;
+  color: #FFFFFF;
+  text-transform: capitalize;
 }
 
 .tags .tags-body {
@@ -25,8 +26,8 @@
 }
 
 .resource .panel-heading {
-  border-bottom: 10px solid #d1e2c8;
-  padding-bottom: 3px;
+  background-color: #d1e2c8;
+  color: #FFFFFF;
 }
 
 .panel-heading p {
